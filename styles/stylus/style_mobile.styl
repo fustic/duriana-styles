@@ -1,0 +1,292 @@
+@import 'nib'
+@import 'variables'
+wrapmin = 320px
+wrapmax = 720px
+
+@media only screen and (max-width: 760px)
+  body
+    min-width wrapmin
+
+  .button
+    height 34px
+    line-height 34px
+    padding-left 20px
+    padding-right 20px
+    &.small
+      padding-left 15px
+      padding-right 15px
+
+  .wrap
+    max-width wrapmax
+    min-width wrapmin - 20px
+
+  header
+    max-width wrapmax
+    min-width wrapmin
+    height 57px
+
+  .header_logo
+    width 96px
+    height 40px
+    background-size 96px 40px
+    top 7px
+
+  .show_header_menu
+    display block
+
+  .header_menu
+    display none
+
+  .header_logo
+    left 50px
+    margin-left 0
+
+  .header_profile
+    display none
+
+  .get_app_but
+    [class*='icon-']
+      display none
+
+  aside
+    display block
+
+  .hr
+    margin 20px 0
+
+  nav, nav.fixed
+    display none
+    z-index -10
+
+  .slideshow
+    display none
+
+  .tizers
+    display block
+    .tizer_item
+      width 100%
+      margin 0 0 10px
+      a
+        display block
+        height 120px
+        overflow hidden
+
+  .recommended_sellers
+    .recommended_seller_item
+      width 50%
+
+  // &:nth-child(n+5)
+  // 	display none
+  .get_now,
+  .likes
+    display none
+
+  .filters
+    text-align left
+    margin-bottom 20px
+
+  .filters_category
+    display none !important
+
+  .card_list_product
+    .card_item_desc
+      margin-left -10px
+      margin-right -10px
+      max-width 200%
+
+  .block_border
+    padding 10px
+    margin-bottom 20px
+
+  .produc_id_user_link
+    margin-right 20px
+
+  .produc_id_user_img
+    width 50px
+    height 50px
+
+  .produc_id_user_name
+    margin-top 4px
+
+  .produc_id_user_name,
+  .produc_id_user_address
+    margin-left 60px
+
+  .produc_id_user_buttons
+    float right
+
+  .product_id_photos_images
+    height 270px
+    width 100%
+    float none
+    li
+      text-align center
+    img
+      max-height 270px
+      max-width 100%
+
+  .product_id_photos_thumbnails
+    display none
+
+  .product_id_map
+    position relative
+    top 0 !important
+
+  .offers_item_user_img
+    width 50px
+    height 50px
+
+  .offers_item_content
+    margin-left 60px
+
+  .user_id_photo
+    text-align center
+    height 200px
+
+  .user_id_photo_img
+    position relative
+    display inline-block
+    bottom 0
+    margin 20px 0 10px
+    width 100px
+    height 100px
+
+  .user_id_name
+    position relative
+    display block
+    left 0
+    bottom 0
+    font-size 28px
+
+  .user_id_nav
+    display block
+    z-index 1
+    .nav_search
+      display block
+      input
+        width 100%
+    .nav_sort
+      display block
+      margin 0
+      overflow hidden
+      li
+        width 50%
+        text-align center
+        a
+          height 40px
+          line-height 44px
+    .user_id_nav_button
+      float none
+      display block
+      margin 0 0 15px
+      .button
+        width 100%
+
+  .ngdialog-content
+    width 94% !important
+
+  .ngdialog-message
+    width 100% !important
+
+  .shop_category_list
+    display block
+    padding 15px 20px
+    li
+      margin 0 0 10px
+      padding-right 0
+    [class*="icon-category-"]
+      font-size 36px
+      vertical-align -10px
+      margin-right 15px
+    a
+      font-weight normal
+
+  .submenu_more
+    .more_menu
+      padding 0
+      li
+        margin 0
+      a
+        display block
+        padding 12px 20px
+        border-bottom 1px solid bdcolor
+        font-size 14px
+
+  .banner_mobile, .app_mobile
+    display block
+
+  .card_list_product
+    .card_item_info_price
+      font-size 14px
+      margin-top 0
+
+  .form_block
+    width 100%
+    min-width 0
+
+  .mobile_promo_page
+    display none
+    position fixed
+    z-index 1000
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background url(/images/mobile_promo_back.jpg) no-repeat 0 0
+    background-size cover
+    padding 15px 0 0
+    box-sizing border-box
+    .logo
+      width 108px
+      height 45px
+      margin 0 auto 15px
+      display block
+      background url(/images/logo_dark.png) no-repeat 0 center
+      background-size 100% auto
+      text-indent -10000em
+      z-index 1
+    h1
+      text-align center
+      font-size 21px
+      font-weight bold
+      margin 0 0 16px
+      line-height 110%
+    ul
+      margin 0 auto
+      width 200px
+      li
+        margin 0 0 6px
+        padding 0 0 0 18px
+        position relative
+        &:before
+          content ''
+          display block
+          position absolute
+          top 4px
+          left 0
+          width 6px
+          height 6px
+          background #FE4080
+          border-radius 50%
+
+    .store_block
+      position absolute
+      bottom 40px
+      width 100%
+      text-align center
+      .store_button
+        border-width 1px
+        height 45px
+        margin-bottom 2px
+    .tosite
+      position absolute
+      bottom 18px
+      width 100%
+      text-align center
+      a
+        color #FE4080
+        font-size 15px
+
+  @media (max-width: 400px)
+    .mobile_promo_page
+      display block

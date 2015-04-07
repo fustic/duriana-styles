@@ -1,0 +1,132 @@
+@import 'nib'
+@import 'variables'
+@import 'variables_desktop'
+
+.slideshow
+  margin-top 140px
+  margin-bottom 15px
+  height 300px
+  overflow hidden
+  h1
+    position absolute
+    font-size 36px
+    color #fff
+    font-weight 600
+  h3
+    position absolute
+    text-align center
+    font-size 18px
+    font-weight normal
+    color #fff
+  .slide_img
+    z-index 0
+  .slide_store
+    position absolute
+    a
+      display inline-block
+      width 160px
+      height 50px
+      margin 0 10px 0 0
+      border 2px solid #fff
+      border-radius 8px
+      &:hover
+        background-color rgba(255,255,255,0.1)
+    &_appstore
+      background url(/images/appstore_w.svg) no-repeat center
+    &_googleplay
+      background url(/images/googleplay_w.svg) no-repeat center
+
+  .item1
+    h1
+      top 60px
+      left 50px
+    h3
+      width 350px
+      top 110px
+      left 115px
+      color #000
+    .slide_store
+      top 187px
+      left 113px
+  .item2
+    h1
+      width 100%
+      text-align center
+      top 60px
+    h3
+      font-size 24px
+      width 350px
+      left 50%
+      margin-left -175px
+      top 115px
+    .slide_store
+      width 100%
+      top 190px
+      text-align center
+  .item3
+    h1
+      right 8%
+      width 410px
+      top 60px
+    h3
+      right 8%
+      width 410px
+      top 115px
+      text-align left
+    .slide_store
+      right 8%
+      width 410px
+      top 190px
+  .item4
+    h1
+      left 120px
+      top 60px
+    h3
+      left 120px
+      top 115px
+      width 350px
+      text-align left
+    .slide_store
+      left 120px
+      top 190px
+  .item5
+    h1
+      left 120px
+      top 60px
+    h3
+      left 120px
+      top 115px
+      width 350px
+      text-align left
+    .slide_store
+      left 120px
+      top 190px
+.banner_mobile
+  display none
+  height 129px
+  background url(/images/banner_mobile.jpg) no-repeat 0 0
+  background-size 100%
+  padding 25px 15px
+  box-sizing border-box
+  margin-top 65px
+  h1
+    font-size 12px
+    text-transform uppercase
+    margin 0 0 10px
+  h3
+    font-size 9px
+    color #999
+.app_mobile
+  display none
+  padding 25px 20px 20px 120px
+  box-sizing border-box
+  background url(/images/phone_banner_mobile.jpg) no-repeat 20px 20px
+  background-size 82px 150px
+  h2
+    color color1
+    font-size 16px
+    margin 0 0 10px
+  p
+    font-size 13px
+    line-height 1.4
+    margin 0 0 15px

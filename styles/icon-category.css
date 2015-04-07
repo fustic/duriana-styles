@@ -1,0 +1,78 @@
+
+@font-face {
+  font-family: 'icon-durian-category';
+  src:url('/fonts/icon-durian-category.woff') format('woff'),
+  url('/fonts/icon-durian-category.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-category-"], [class*=" icon-category-"] {
+  font-family: 'icon-durian-category';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-category-textbooks:before {
+  content: "\e60f";
+}
+.icon-category-forher:before {
+  content: "\e611";
+}
+.icon-category-photography:before {
+  content: "\e600";
+}
+.icon-category-forhim:before {
+  content: "\e601";
+}
+.icon-category-luxury:before {
+  content: "\e602";
+}
+.icon-category-music:before {
+  content: "\e603";
+}
+.icon-category-kids:before {
+  content: "\e604";
+}
+.icon-category-home:before {
+  content: "\e605";
+}
+.icon-category-gamesandtoys:before {
+  content: "\e606";
+}
+.icon-category-vintage:before {
+  content: "\e607";
+}
+.icon-category-lifestylegadgets:before {
+  content: "\e608";
+}
+.icon-category-books:before {
+  content: "\e609";
+}
+.icon-category-other:before {
+  content: "\e60a";
+}
+.icon-category-sport:before {
+  content: "\e60b";
+}
+.icon-category-designandcraft:before {
+  content: "\e60c";
+}
+.icon-category-beauty:before {
+  content: "\e60d";
+}
+.icon-category-tickets:before {
+  content: "\e60e";
+}
+.icon-category-muslimahfashion:before {
+  content: "\e610";
+}

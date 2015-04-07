@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'icon-durian-all';
+  src:url('/fonts/icon-durian-all.woff') format('woff'),
+  url('/fonts/icon-durian-all.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icon-durian-all';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-facebook:before {
+  content: "\e700";
+}
+.icon-twitter:before {
+  content: "\e701";
+}
+.icon-instagram:before {
+  content: "\e702";
+}
+.icon-comment:before {
+  content: "\e703";
+}
+.icon-like:before {
+  content: "\e704";
+}
+.icon-phoneapp:before {
+  content: "\e705";
+}
+.icon-search:before {
+  content: "\e706";
+}
+.icon-dropdown:before {
+  content: "\e707";
+}
+.icon-slideleft:before {
+  content: "\e708";
+}
+.icon-slideright:before {
+  content: "\e709";
+}
+.icon-arrowdown:before {
+  content: "\e70a";
+}
+.icon-more:before {
+  content: "\e70b";
+}
+.icon-sell:before {
+  content: "\e70c";
+}
+.icon-shop:before {
+  content: "\e70d";
+}
+.icon-location:before {
+  content: "\e70e";
+}
+
+.icon-menu:before {
+  content: "\e70f";
+}
+.icon-arrow-right:before {
+  content: "\e710";
+}

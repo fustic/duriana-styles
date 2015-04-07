@@ -1,0 +1,446 @@
+@import 'nib'
+@import 'variables'
+@import 'variables_desktop'
+
+*
+	margin 0
+	padding 0
+	outline none
+
+html, body
+	min-height 100%
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+body
+	position relative
+	background #fff
+	font-family fftext
+	color ctext
+	font-size 14px
+	min-width wrapmin
+
+h1, h2, h3
+	font-weight normal
+h1
+	font-size 32px
+	margin 0 0 40px
+	color ctext
+h2
+	font-size 26px
+h3
+	font-size 20px
+
+a
+	color ctext
+	transition .1s
+	text-decoration none
+	cursor pointer
+	&:hover
+		color lighten(color1,20%)
+	img
+		border none
+
+ul li
+	list-style none
+
+
+div, header, footer, nav, aside, menu, article, section
+	position relative
+
+.hidden
+	display none!important
+.desktop-hidden
+  display none
+.show
+	display block!important
+
+.a_center
+	text-align center
+.a_left
+	text-align left
+.a_right
+	text-align right
+
+.f-left
+	float left
+.f-right
+	float right
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="search"],
+textarea
+	height 42px
+	padding 0 10px
+	font-size 13px
+	font-family fftext
+	color ctext
+	background-color #fff
+	border 1px solid bdcolor
+	transition .3s
+	box-sizing border-box
+	border-radius 0
+	-webkit-appearance none
+	appearance none
+	box-shadow none
+	&:focus
+		border-color color1
+	&[disabled]
+		cursor not-allowed
+	&.succes, &.ng-touched.ng-valid
+		border-color #59B450!important
+		background-color #EFFBF1!important
+	&.error, &.ng-touched.ng-invalid
+		border-color #E27575!important
+		background-color #FBEFEF!important
+textarea
+	padding 5px 10px
+	height 80px
+	resize none
+.columns
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="tel"],
+	input[type="search"],
+	textarea
+		width 100%
+
+.error_message
+	color #e27575
+	font-size 10px
+
+.button
+	position relative
+	display inline-block
+	vertical-align top
+	height 42px
+	line-height 42px
+	padding 0 30px
+	color #fff
+	font-size 13px
+	font-weight 700
+	text-decoration none
+	box-sizing border-box
+	background color2
+	border-radius 2px
+	border none
+	cursor pointer
+	transition .2s
+	text-transform uppercase
+	text-align center
+	&:hover
+		background-color lighten(color2,10%)
+		color #fff
+
+	&.second
+		background-color color1
+		&:hover
+			background-color lighten(color1,10%)
+
+	&.big
+		height 52px
+		line-height 52px
+	&.small
+		height 34px
+		line-height 34px
+		padding 0 20px
+		font-size 12px
+	&.disabled
+		background #aaa
+		color #f8f8f8
+		cursor default
+
+	&.facebook
+		background #3A589B url(/images/facebook_w.svg) no-repeat 25px 11px
+		background-size 8px
+		padding-left 50px
+		&:hover
+			background-color #4665AB
+	&.clean
+		border 1px solid color2
+		background-color transparent
+		color color2
+		font-weight normal
+		&:hover
+			background-color color2
+			color #fff
+		&.second
+			border-color color1
+			color color1
+			&:hover
+				background-color color1
+				color #fff
+.wrap
+	width 95%
+	max-width wrapmax
+	min-width wrapmin
+	margin 0 auto
+	height 100%
+
+.w100
+	width 100%!important
+.w50
+	width 50%!important
+
+.item-container,
+.user-container
+	margin-top 94px
+
+.store_button
+	display inline-block
+	width 160px
+	height 50px
+	margin 0 5px 0 0
+	border 2px solid color1
+	border-radius 8px
+	text-indent -10000em
+	background-position center
+	background-repeat no-repeat
+	&:hover
+		background-color rgba(color1,0.05)
+	&.appstore
+		background-image url(/images/appstore.svg)
+	&.googleplay
+		background-image url(/images/googleplay.svg)
+
+.block_border
+	width 100%
+	box-sizing border-box
+	margin-bottom 20px
+	border 1px solid bdcolor
+	border-radius 2px
+	padding 15px 25px
+	box-sizing border-box
+.block_title
+	color color1
+	font-size 16px
+	text-transform uppercase
+	padding 0 0 8px
+	border-bottom 1px solid color1
+	margin 0 0 15px
+
+
+.ngdialog-content
+	h1
+		font-size 26px
+		color color1
+		line-height 110%
+		margin 0 0 30px
+		&:after
+			display block
+			width 10%
+			height 2px
+			background color1
+			content ''
+			margin 12px 0 0
+	p
+		line-height 120%
+		font-size 15px
+		margin 0 0 10px
+	.button_panel
+		padding 20px 0 0
+.popup_getapp
+	width 850px
+	padding 0 0 0 370px
+	background url(/images/popup_getapp_backphones.png) no-repeat 0 20px
+	h1
+		font-size 30px
+		margin-bottom 7px
+		padding-top 70px
+		background url(/images/logo_dark.png) no-repeat right 0
+		&:after
+			display none
+	h3
+		color #999
+		font-size 18px
+		margin 0 0 20px
+	.phone_download
+		margin 0 0 15px
+		font-size 13px
+		p
+			margin 0 0 10px
+		form
+			background #eee
+			padding 10px 20px
+			border-radius 3px
+			p
+				color #999
+				margin 5px 0 0
+	.store_download
+		font-size 13px
+		p
+			margin 0 0 10px
+.popup_login
+	width 400px
+
+.popup_offer
+	width 350px
+	.offer_intro
+		font-size 16px
+		text-align center
+		font-weight bold
+		margin-bottom 15px
+	form
+		margin 0 0 20px
+		input[type='text'],
+		input[type='email'],
+		input[type='tel'],
+		input[type='submit'],
+		textarea
+			width 100%
+			margin-bottom 10px
+	.store_download
+		text-align center
+
+
+.tizers
+	overflow hidden
+	display flex
+	justify-content space-between
+.hr
+	margin 30px 0
+	height 1px
+	background lighten(bdcolor,20%)
+	clearfix()
+
+.tizer_item
+	width 24%
+	a
+		display block
+		color #fff
+		text-transform uppercase
+		font-size 14px
+	img
+		width 100%
+		height auto
+		float left
+	&_name
+		position absolute
+		bottom 0
+		left 0
+		background color1
+		background rgba(color1,0.9)
+		padding 6px 22px
+		border-radius 0 2px 0 0
+
+.widget
+	font-size 12px
+	.title
+		text-transform uppercase
+		margin 0 0 15px
+		color color1
+		font-size 14px
+		letter-spacing 1px
+		&:after
+			display block
+			width 10%
+			height 2px
+			background color1
+			content ''
+			margin 10px 0 0
+
+.recommended_sellers_list
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+.recommended_seller_item
+	width 31%
+	margin 0 0 20px
+	.img
+		display block
+		float left
+		width 50px
+		height 50px
+		box-sizing border-box
+		border-radius 50%
+		border 2px solid #fff
+		overflow hidden
+		background-size cover
+		background-repeat no-repeat
+		z-index 10
+		margin 0 6px 0 0
+	.name
+		font-size 14px
+		color color1
+		display block
+		margin 2px 0 2px 56px
+		word-break break-all
+	&:hover
+		.name
+			color lighten(color1,20%)
+	.category
+		display block
+		text-transform uppercase
+		letter-spacing 0.5px
+		margin 0 0 2px 56px
+		font-size 10px
+		color ctext
+	.count
+		display block
+		color #999
+		margin-left 56px
+.likes_list
+	overflow hidden
+.like_item
+	width 12%
+	height 40px
+	margin 0 2.6666% 10px 0
+	background #eee
+	float left
+	&:nth-child(7n)
+		margin-right 0
+
+.filters
+	text-align right
+	margin 0 0 30px
+	.filters_list
+		display inline-block
+		text-align left
+	select
+		text-align left
+	.select2-chosen
+		text-transform uppercase
+		font-size 12px
+		letter-spacing 1px
+
+.form_block
+	width 60%
+	min-width 600px
+	margin 0 auto
+	&_title
+		background bdcolor
+		font-size 22px
+		text-align center
+		padding 12px
+		border-radius 2px 2px 0 0
+	&_content
+		border 1px solid bdcolor
+		padding 20px 20px
+		border-radius 0 0 2px 2px
+		p
+			margin 0 0 15px
+	.confirmation
+		padding 100px 20px
+		text-align center
+		font-size 26px
+	.row
+		margin-bottom 5px
+	.columns.name
+		padding-top 10px
+	.columns.value
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		input[type="tel"],
+		input[type="search"],
+		input[type="button"],
+		.button,
+		textarea
+			width 100%
+	.columns.submit
+		padding-top 20px
+		text-align center

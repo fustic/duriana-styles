@@ -1,0 +1,221 @@
+@import 'nib'
+@import 'variables'
+@import 'variables_desktop'
+
+.angular-google-map-container
+  height 150px
+.produc_id_user
+  margin 0 0 10px
+  overflow hidden
+  &_link
+    display inline-block
+    vertical-align top
+    margin-right 50px
+    &:hover
+      .produc_id_user_name
+        color lighten(color1,20%)
+  &_img
+    float left
+    width 70px
+    height 70px
+    border-radius 50%
+    overflow hidden
+    margin 0 12px 0 0
+    background-size cover
+    background-repeat no-repeat
+    background-position center
+  &_name
+    margin 12px 0 5px 85px
+    font-size 16px
+    font-weight bold
+    color color1
+    display block
+
+  &_address
+    display block
+    margin-left 85px
+    color #aaa
+  &_buttons
+    display inline-block
+    vertical-align top
+    padding 12px 0 0
+
+.image
+  div.layer
+   text-align: center
+
+.offers_list
+  clear both
+.offers_item
+  margin 0 0 10px
+  overflow hidden
+  &_user_img
+    float left
+    width 65px
+    height 65px
+    border-radius 50%
+    overflow hidden
+    margin 0 12px 0 0
+    background-size cover
+    background-repeat no-repeat
+    background-position center
+  &_content
+    margin 0 0 0 80px
+    padding 10px 0 0
+  &_user_name
+    color color1
+    font-size 15px
+    display inline
+  &_text
+    display inline
+    line-height 18px
+  &_date
+    padding 5px 0 0
+    display block
+    color #aaa
+
+.product_id_info
+  margin 0 0 15px
+.product_id_likes
+  color #aaa
+  display inline-block
+  margin 0 8px 0 0
+  float right
+  &:before
+    icon_durian '\e704'
+    font-size 11px
+    margin 0 4px 0 0
+    vertical-align 0
+
+.product_id_name
+  color color1
+  font-size 20px
+  font-weight bold
+  margin 0 0 20px
+  &:after
+    display block
+    width 10%
+    height 2px
+    background color1
+    content ''
+    margin 8px 0 0
+.product_id_desc
+  color #999
+  line-height 18px
+  margin 0 0 15px
+.product_id_hashtags
+  margin 0 0 20px
+  a
+    color color1
+    display inline-block
+    margin 0 3px 0 0
+    font-size 13px
+    &:hover
+      color lighten(color1,20%)
+
+
+.product_id_property
+  margin 0 0 30px
+  dl
+    display inline-block
+    margin 0 50px 0 0
+    text-transform uppercase
+    &:nth-child(2n)
+      margin-right 0
+  dt
+    color #aaa
+    font-weight bold
+    display inline-block
+    margin 0 15px 0 0
+  dd
+    display inline-block
+
+.product_id_action
+  margin 0 0 20px
+  .button
+    width 100%
+    margin 0 0 2px
+
+.product_id_share
+  color #aaa
+  p
+    font-size 12px
+    display inline-block
+    vertical-align middle
+    margin 0 45px 0 30px
+  a
+    margin 0 2px 0 0
+    vertical-align middle
+.fb_circle,
+.tw_circle,
+.gp_circle
+  display inline-block
+  width 32px
+  height 32px
+  text-indent -10000em
+  background-size 100%
+  transition .3s
+  &:hover
+    opacity 0.9
+
+.fb_circle
+  background-image url(/images/facebook_circle.svg)
+.tw_circle
+  background-image url(/images/twitter_circle.svg)
+.gp_circle
+  background-image url(/images/googleplus_circle.svg)
+
+.product_id_map
+  padding 0
+  border none
+  height 150px
+  transition .3s
+  position relative
+  &>div
+    width 100%
+    height 100%
+  .button.expand_but
+    position absolute
+    bottom 10px
+    left 10px
+
+.product_id_photos
+  overflow hidden
+.product_id_photos_images
+  float left
+  width 80%
+  height 400px
+  overflow hidden
+  ul
+    height 100%
+  img
+    max-width 90%
+    max-height 400px
+.product_id_photos_thumbnails
+  width 20%
+  float right
+  max-height 400px
+  overflow-y scroll
+  padding-right 5px
+  box-sizing border-box
+  img
+    max-width 100%
+    height auto
+    opacity .7
+    cursor pointer
+    transition .3s
+    &.active, &:hover
+      opacity 1
+  &::-webkit-scrollbar
+    width 8px
+  &::-webkit-scrollbar-track
+    background transparent
+  &::-webkit-scrollbar-thumb
+    border-radius 10px
+    background #bbb
+    cursor pointer
+    &:hover
+      background #999
+    &:window-inactive
+      background #999
+

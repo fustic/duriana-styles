@@ -1,0 +1,228 @@
+@import 'nib'
+@import 'variables'
+@import 'variables_desktop'
+
+.card_list
+  clearfix()
+  margin 0 auto
+  width 100% !important
+  height 100px
+
+.card_item
+  margin-bottom 20px
+  border 1px solid bdcolor
+  border-radius 2px
+  padding 10px
+  box-sizing border-box
+  vertical-align top
+  position absolute
+  @media (max-width: 1102px)
+    width 200px
+
+
+.card_list_product
+  .card_item_desc
+    margin-left 0 !important
+    margin-right 0 !important
+  .card_item
+    &_user
+      margin 0 0 9px
+      font-size 11px
+      display block
+      overflow hidden
+      .user_img
+        float left
+        width 30px
+        height 30px
+        border-radius 50%
+        overflow hidden
+        background-size cover
+        background-repeat no-repeat
+        background-position center
+        img
+          width 30px!important
+          min-height 30px
+      .user_name
+        font-size 13px
+        color #696969
+        display block
+        line-height 14px
+        margin 0 0 0 38px
+        word-break break-all
+        em
+          color #8C8C8C
+          font-size 11px
+      .user_post_time
+        display block
+        color #aaa
+        line-height 14px
+        margin 0 0 0 38px
+      &:hover
+        .user_name
+          color color1
+    &_desc
+      display block
+      max-width 100%
+      overflow hidden
+      margin 0 0 10px
+    &_img
+      display block
+      overflow hidden
+      position relative
+      width 100%
+      img
+        width 100%
+        height auto
+        float left
+    &_sold
+      background rgba(color2,0.8)
+      position absolute
+      top 0
+      left 0
+      padding 5px 20px
+      color #fff
+      font-size 13px
+      font-weight bold
+      opacity 1
+      transition .4s
+    &_text
+      position absolute
+      top 0
+      left 0
+      width 100%
+      height 100%
+      box-sizing border-box
+      background linear-gradient(top, rgba(240,59,131,0.85) 0, rgba(235,141,85,0.85) 100%)
+      padding 10px 10px 55px
+      font-size 12px
+      color #fff
+      line-height 15px
+      transition .3s
+      transform scale(.9)
+      opacity 0
+      span
+        display block
+        max-height 100%
+        overflow hidden
+        box-sizing border-box
+
+    &_img_link
+      position absolute
+      bottom -40px
+      left 0
+      right 0
+      text-align center
+      transition .3s
+      opacity 0
+      a
+        display inline-block
+        margin 0 1px
+        height 33px
+        line-height 33px
+        font-size 10px
+        text-transform uppercase
+        color color2
+        font-weight bold
+        background rgba(#fff,0.9)
+        border-radius 2px
+        padding 0 12px
+        &:hover
+          background #fff
+    &:hover
+      .card_item_text
+        opacity 1
+        transform scale(1)
+      .card_item_sold
+        opacity 0
+      .card_item_img_link
+        bottom 10px
+        opacity 1
+    &_name
+      font-size 13px
+      color ctext
+      font-weight bold
+      margin 0 0 6px
+      display block
+      letter-spacing 0.5px
+    &_info
+      overflow hidden
+    &_info_price
+      float right
+      font-size 16px
+      color #666666
+      margin -2px 0 0
+    &_info_likes,
+    &_info_comments
+      color #aaa
+      display inline-block
+      margin 0 8px 0 0
+      &:before
+        icon_durian '\e704'
+        font-size 11px
+        margin 0 4px 0 0
+        vertical-align 0
+      &:hover
+        color color2
+    &_info_comments
+      &:before
+        content '\e703'
+        font-size 13px
+
+
+
+.card_list_user
+  .card_item
+    &_user
+      margin 0 0 9px
+      display block
+      overflow hidden
+      text-align center
+      .user_img
+        display inline-block
+        width 120px
+        height 120px
+        border-radius 50%
+        overflow hidden
+        margin 0 0 8px
+        background-size cover
+        background-repeat no-repeat
+        background-position center
+      .user_name
+        font-size 18px
+        color color1
+        display inline-block
+        width 100%
+        em
+          color #8C8C8C
+          font-size 11px
+
+      &:hover
+        .user_name
+          color lighten(color1,20%)
+    &_follow
+      font-size 13px
+      text-transform uppercase
+      text-align center
+      a
+        display block
+        margin 0 0 5px
+    &_user_products
+      margin 15px 0 0
+      padding 15px 0 0
+      border-top 3px solid bdcolor
+      overflow hidden
+      a
+        float left
+        width 33.3333%
+        overflow hidden
+        height 60px
+        padding 0 1px 0 0
+        margin 0 0 1px
+        box-sizing border-box
+        &:nth-child(3n)
+          margin-right 0
+        img
+          width 100%
+          height auto
+          min-height 100%
+
